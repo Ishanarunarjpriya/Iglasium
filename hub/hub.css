@@ -1,0 +1,80 @@
+:root {
+    --bg: #0b0f14;
+    --panel: #141a21;
+    --panel-2: #10161d;
+    --text: #e7eef6;
+    --muted: #9fb0c3;
+    --accent: #4cb05e;
+    --border: #232c36;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(1200px 600px at 20% -10%, #1a2430, var(--bg));
+    color: var(--text);
+    font-family: "Space Grotesk", "Avenir Next", "Trebuchet MS", sans-serif;
+}
+
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 48px 20px 64px;
+}
+
+.hero h1 {
+    margin: 0 0 8px;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+}
+
+.hero p {
+    margin: 0 0 32px;
+    color: var(--muted);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    display: block;
+    padding: 16px;
+    background: linear-gradient(180deg, var(--panel), var(--panel-2));
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 120ms ease, border-color 120ms ease;
+}
+
+.card h2 {
+    margin: 0 0 6px;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+}
+
+.card.muted {
+    opacity: 0.65;
+}
+
+.footer {
+    margin-top: 28px;
+    color: var(--muted);
+    font-size: 13px;
+}

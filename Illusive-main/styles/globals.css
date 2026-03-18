@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, 'sans-serif';
+  letter-spacing: 0 !important;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+[data-theme="classic"] {
+  --accent: #ebebeb;
+  --setbox: #D9D9D9;
+	--bg-color: #181818;
+  --appBG: #232323;
+	--font-color: #a6a6a6;
+	--ui: #808080 ;
+  --clock-hover: #ebebeb;
+  --ql-dock: #000000;
+  --main: #232323;
+  --hr: #3C3C3C;
+  --dock: rgb(35, 35, 35);
+  --dock-input: #171717;
+  --dockInner-s: rgba(55, 55, 55, 0.25);
+  --controls-btns: white;
+  --controls-btns-hover: #1a66ff;
+  --mark: #8F8F8F;
+  --caret: white;
+  --settings-bg: #333;
+}
+
+[data-theme="classic"]::-webkit-scrollbar-track {
+  background: #232323;
+  scrollbar-color: var(--appBG) var(--bg-color);
+}
+
+#tsparticles[data-theme="light"] {
+  display: none;
+}
+
+#lightparticles[data-theme="light"] {
+  display: block !important;
+}
+
+#lightparticles {
+  display: none;
+}
+
+[data-theme="summer"] {
+  --accent: #6c5a47;
+  --setbox: #d5c2a9;
+  --bg-color: #DBD0C0;
+  --appBG: #F9E4C8;
+  --font-color: #a68e76;
+  --ui: #E6DDC6;
+  --clock-hover: #7d7d7d;
+  --ql-dock: #ffffff;
+  --main: #b0b0b0;
+  --hr: #E6DDC6;
+  --dock: #f9e4c8;
+  --dock-input: #ffe9d3;
+  --dockInner-s: rgb(253, 236, 219);
+  --controls-btns: #a6937a;
+  --controls-btns-hover: #776753;
+  --mark: #b9a592;
+  --caret: #a68e76;
+  --settings-bg: #d5c2a9;
+}
+
+[data-theme="light"] {
+  --accent: #000000;
+  --setbox: #4a4a4a;
+  --bg-color: #e3e3e3;
+  --appBG: #f0f0f0;
+  --font-color: #000000;
+  --ui: #333;
+  --clock-hover: #7d7d7d;
+  --ql-dock: #ffffff;
+  --main: #b0b0b0;
+  --hr: #3d3d3d;
+  --dock: rgba(255, 255, 255, 0.25);
+  --dock-input: #fff;
+  --dockInner-s: rgba(255, 255, 255, 1);
+  --controls-btns: #000000;
+  --controls-btns-hover: #525252;
+  --mark: #6e6e6e;
+  --caret: black;
+  --settings-bg: #ccc;
+}
+
+[data-theme="hacker"] {
+  --accent: #37ff00;
+  --setbox: #0a1108;
+	--bg-color: #000000;
+  --appBG: #050904;
+	--font-color: #37ff00;
+	--ui: #0a1108;
+  --clock-hover: #197500;
+  --ql-dock: #000000;
+  --main: #232323;
+  --hr: #BDBCBC;
+  --dock: rgb(5, 9, 4);
+  --dock-input: black;
+  --dockInner-s: rgba(55, 55, 55, 0.25);
+  --controls-btns: #2dd200;
+  --controls-btns-hover: #085e01;
+  --mark: #036400;
+  --caret: #2dd200;
+  --settings-bg: #141414;
+}
+
+[data-theme="ember"] {
+  --accent: #533131;
+  --setbox: #533131;
+  --bg-color: #4a2e2e;
+  --appBG: #684141;
+  --font-color: #ffc6c6;
+  --ui: #533131;
+  --clock-hover: #866060;
+  --hr: #533131;
+  --dock: #684141;
+  --dock-input: #442929;
+  --dockInner-s: rgb(128, 84, 84);
+  --controls-btns: #FF9A9A;
+  --controls-btns-hover: #A46262;
+  --mark: #664242;
+  --caret: #bf8c8c;
+  --settings-bg: #533131;
+}
+
+[data-theme="mint"] {
+  --accent: #2B8E4D;
+  --setbox: #2B8E4D;
+  --bg-color: #9de7b5 /*#b6ffce*/;
+  --appBG: #42AF67;
+  --font-color: #286c3e;
+  --ui: #23763F;
+  --clock-hover: #23e462;
+  --hr: #2B8E4D;
+  --dock: #53e484;
+  --dock-input: #82e4a5;
+  --dockInner-s: #53e484;
+  --controls-btns: #46c871;
+  --controls-btns-hover: #37bb62;
+  --mark: #55cc7e;
+  --caret: #6AED96;
+  --settings-bg: #2B8E4D;
+}
+
+[data-theme="fracital"] {
+  --accent: #ff77fc;
+  --setbox: #313131;
+  --bg-color: #282828;
+  --appBG: #1d1d1d;
+  --font-color: #ff77fc;
+  --ui: #111;
+  --clock-hover: #bb4db9;
+  --hr: #FF77FC;
+  --dock: #1d1d1d;
+  --dock-input: #111;
+  --dockInner-s: #1a1a1a;
+  --controls-btns: #FF77FC;
+  --controls-btns-hover: #EE37EA;
+  --mark: #F030EC;
+  --caret: #FF77FC;
+  --settings-bg: #313131;
+}
+
+[data-theme="terbium"] {
+  --accent: #47CA64;
+  --setbox: #313131;
+  --bg-color: #282828;
+  --appBG: #1d1d1d;
+  --font-color: #888;
+  --ui: #111;
+  --clock-hover: #47CA64;
+  --hr: #47CA64;
+  --dock: #1d1d1d;
+  --dock-input: #111;
+  --dockInner-s: #1a1a1a;
+  --controls-btns: #47CA64;
+  --controls-btns-hover: #2E8C43;
+  --mark: #47CA64;
+  --caret: #888;
+  --settings-bg: #111;
+}
+
+[data-theme="amber"] {
+--accent: #AF7D42;
+--setbox: #593c1b;
+--bg-color: #AF7D42;
+--appBG: #835929;
+--font-color: #F2B266;
+--ui: #7E5A30;
+--clock-hover: #a5610e;
+--hr: #b38148;
+--dock: #AF7D42;
+--dock-input: #855F33;
+--dockInner-s: #C69156;
+--controls-btns: #835929;
+--controls-btns-hover: #dba66a;
+--mark: #4F3920;
+--caret: #F2B266;
+--settings-bg: #593c1b;
+}
